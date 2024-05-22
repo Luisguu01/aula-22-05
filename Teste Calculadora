@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class TesteCalculadora {
+		public static void main(String [] args) {
+			int num1, num2;
+			Scanner sc = new Scanner (System.in);
+			System.out.println("Informe o primeiro numero: ");
+			num1 = sc.nextInt();
+			System.out.println("Informe o segundo numero: ");
+			num2 = sc.nextInt();
+			Calculadora calc = new Calculadora(num1, num2);
+			System.out.println("Soma: " + calc.soma());
+			System.out.println("Subtração: "+ calc.subtracao());
+			System.out.println("Multiplicação: "+calc.multiplicacao());
+			System.out.println("Divisão: "+ calc.divisao());
+			sc.close();
+		}
+}
